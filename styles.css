@@ -1,5 +1,10 @@
 * { 
-font-family: sans-serif;
+font-family: 'Muli', sans-serif;
+font-weight: 500;
+}
+
+body {
+    margin: 0;
 }
 
 img {
@@ -14,6 +19,11 @@ button {
     border-radius: 10px;
     font-weight: bold;
     padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -41,30 +51,23 @@ button {
     align-items: flex-end;
 }
 
-.header-container {
+.presentation-container {
     display: flex;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: center;
+    gap: 20px;
 }
 
-.header-title-button {
+.presentation-title-button {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-right: 30px;
-    flex: 1;
 }
 
-.main-text {
+.presentation-main-text {
     font-size: 48px;
     font-weight: bolder;
 }
 
-.image-container {
-    flex: 1;
-}
-
-.first-image {
+.presentation-image {
     object-fit: contain;
     height: 250px;
 }
@@ -78,12 +81,14 @@ button {
 
 .image-description-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 100px;
 }
 
 .image-description {
     height: 200px;
+    border: solid #3882F6;
 }
 
 .text-description {
@@ -97,16 +102,49 @@ button {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 100px 200px;
+    padding: 50px 200px;
 }
 
 .quote {
     font-style:italic;
-    font-weight: 100;
-    font-size: 36px;
+    opacity: 50%;
+    font-size: 32px;
 }
 
 .quote-author {
     align-self: flex-end;
     font-weight: bold;
+}
+
+.blue-block {
+    background-color: #3882F6;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    margin: 50px 200px;
+}
+
+.call-to-action-title {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.call-to-action-text {
+    color: white;
+}
+
+.call-to-action-button {
+    border-color: white;
+    border: solid;
+    width: 100px;
+}
+
+.credits {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
